@@ -2,22 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    height: 95vh;
+    height: 115vh;
     width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#9d40af;
-    color: #466e58;
+    background-color:#17ec69;
+    color: #0b70384f;
     font-family: 'Press Start 2P', cursive;
 }
 
-
 canvas {
-    margin-bottom: 50px;
+    margin-bottom: 2px;
 }
-
 
 footer {
     display: flex;
@@ -42,7 +40,22 @@ footer {
     width: 150px;
 }
 
-footer a {
+footer {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
+}
+
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.8); /* Cor de fundo vermelha com opacidade */
+    color: white; /* Cor do texto branca */
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    z-index: 9999; /* Garante que o alerta esteja sempre na frente de outros elementos */
+    display: none; /* Inicialmente escondido */
 }
